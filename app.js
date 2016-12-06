@@ -4,6 +4,7 @@ var app = express();
 app.set('port',(process.env.PORT | 3000));
 
 app.use(express.static(__dirname));
+
 app.get('/', function(req,res){
   res.render(__dirname + '/index.html');
 });
